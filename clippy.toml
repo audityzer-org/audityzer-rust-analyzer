@@ -1,0 +1,26 @@
+# Clippy configuration for Audityzer Rust Analyzer
+
+# Deny common mistakes
+warn-on-all-wildcard-imports = true
+
+# Performance lints
+[lints.clippy]
+unused_async = "warn"
+large_enum_variant = "warn"
+large_stack_arrays = "warn"
+
+# Correctness lints  
+missing_panics_doc = "allow"
+missing_errors_doc = "allow"
+module_name_repetitions = "allow"
+
+# Pedantic lints
+pedantic = "warn"
+nursery = "warn"
+
+# Allow some pedantic lints
+cast_precision_loss = "allow"
+cast_possible_truncation = "allow"
+cast_sign_loss = "allow"
+struct_excessive_bools = "allow"
+fn_params_excessive_bools = "allow"
